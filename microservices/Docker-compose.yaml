@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  landing-service:
+    build: ./landing
+    hostname: landing-service
+    ports:
+      - 5050:5050
+    networks:
+      sample:
+        aliases:
+          - landing-service
+          
+  addition-service:
+    build: ./landing/app/add
+    hostname: addition-service
+    ports:
+      - 5051:5051
+    networks:
+      sample:
+        aliases:
+          - addition-service
+        
