@@ -20,4 +20,6 @@ services:
       sample:
         aliases:
           - addition-service
-        
+
+networks:
+  sample:
