@@ -1,4 +1,3 @@
-from webbrowser import Opera
 from flask import Flask, request, flash, render_template
 from flask_restful import Api
 
